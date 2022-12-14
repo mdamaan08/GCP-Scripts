@@ -13,3 +13,9 @@ echo "Hello World from $(hostname) $(hostname -i)"
 echo "Hello world from $(hostname) $(hostname -i)" > /var/www/html/index.html
 sudo service apache2 start
 
+
+
+#!/bin/bash
+apt update 
+apt -y install apache2
+echo "Hello world from $(hostname) $(hostname -I)" > /var/www/html/index.html
